@@ -40,7 +40,8 @@ gems:
 font-awesome:
   assets: true
 
-# url: https://reboot-snu.github.io
+url: https://reboot-snu.github.io
+
 
 
 # Exclude from processing.
