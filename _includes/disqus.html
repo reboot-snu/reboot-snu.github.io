@@ -2,9 +2,11 @@
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "reboot-snu.github.io{{ page.url }}"; // <--- use canonical URL
+this.page.url = "{{ site.url }} + {{ page.url }}"; // <--- use canonical URL
 this.page.identifier = "{{ page.id }}";
+this.page.title = "{{ page.title }}";
 };
+
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 
