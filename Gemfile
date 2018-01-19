@@ -27,3 +27,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # my installation
 gem "tale"
+gem 'jekyll-font-awesome-sass'

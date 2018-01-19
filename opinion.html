@@ -1,9 +1,11 @@
 ---
 layout: default
+title: 기고
+permalink: /opinion/
 ---
 
 <div class="catalogue">
-  {% for post in paginator.posts %}
+  {% for post in site.categories.opinion %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>

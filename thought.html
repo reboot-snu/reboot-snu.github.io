@@ -1,15 +1,26 @@
 ---
-layout: page
-title: Python
-permalink: /python/
+layout: default
+title: 이우일의 생각
+permalink: /thought/
 ---
 
 <div class="catalogue">
-  {% for post in site.categories.python %}
+  {% for post in site.categories.thought %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.categories}} | {{ post.title }}</h1>
+        <h1>
+        {% if post.categories[0] == "thought" %}
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        {% elsif post.categories[0] == "opinion" %}
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+        {% elsif post.categories[0] == "commitment" %}
+        <i class="fa fa-star" aria-hidden="true"></i>
+        {% elsif post.categories[0] == "video" %}
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        {% endif %}
+        {{ post.title }}
+        </h1>
         <div class="catalogue-line"></div>
 
         <p>
