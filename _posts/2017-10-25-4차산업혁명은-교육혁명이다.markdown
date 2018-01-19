@@ -3,6 +3,7 @@ layout: post
 title:  "4차산업혁명은 교육혁명이다"
 date:   2017-10-25 14:57:00 +0900
 categories: opinion
+comments: true
 ---
 #### [한국일보 2017년 10월 25일](http://www.hankookilbo.com/v/b0443ce48eba4cfd80896efe1e4ff9ea)
 
@@ -19,3 +20,5 @@ categories: opinion
 지금 우리가 무엇을 어떻게 준비하는가에 따라 우리 교육, 나아가 우리 국가의 운명이 바뀌게 될 것이다. 개개인의 특성과 장점을 우선적으로 고려하는 교육시스템으로의 대 전환, 더 이상 지체할 여유가 없다.
 
 #### 이우일 서울대 교수·기계항공공학
+
+{% include disqus.html %}
