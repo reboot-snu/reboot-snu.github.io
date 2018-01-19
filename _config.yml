@@ -37,8 +37,8 @@ paginate: 5
 gems:
   - jekyll-font-awesome-sass
 
-font-awesome:
-  assets: true
+# font-awesome:
+#   assets: true
 
 url: https://reboot-snu.github.io
 
