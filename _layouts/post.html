@@ -12,8 +12,17 @@ layout: default
     {% endif %} -->
 
     {% if page.date %}
-      <br>
+      <!-- <br> -->
       <!-- <span>on&nbsp;</span> -->
+      {% if page.categories[0] == "opinion" %}
+      기고
+      {% elsif page.categories[0] == "thought" %}
+      이우일의 생각
+      {% elsif page.categories[0] == "commitment" %}
+      공약
+      {% elsif page.categories[0] == "video" %}
+      비디오
+      {% endif %} &middot; 
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
