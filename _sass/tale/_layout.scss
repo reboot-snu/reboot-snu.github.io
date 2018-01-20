@@ -16,7 +16,7 @@ footer,
 .nav {
   // box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
-  background-color: #a7e6f9;
+  background-color: #bde0fe;
 
   &-container {
     margin: 1rem auto;
@@ -42,7 +42,7 @@ footer,
     max-width: 800px;
     width: 80%;
     height: 250px;
-    background-image: url("/assets/images/main-image1.png");
+    background-image: url("/assets/images/main-image2.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 488px 253px;
@@ -110,5 +110,22 @@ footer {
   span {
     color: $default-color;
     font-size: .8rem;
+  }
+}
+
+.wak {
+  margin: 0 auto;
+  max-width: 800px;
+  // width: 80%;
+  height: 120px;
+  border: 1px solid silver;
+  // background-image: url("/assets/images/main-image1.png");
+  // background: #A7E6F9 url("/assets/images/main-image1.png") no-repeat right top;
+  &-banner {
+    max-height: 100px;
+    margin-top: 5px;
+	  margin-right: auto;
+	  margin-left: auto;
+    vertical-align: middle;
   }
 }
