@@ -3,7 +3,7 @@
 
   {% include head.html %}
   {% include google_analytics.html %}
-  
+
   <body>
     <nav class="nav">
       <div class="nav-container">
@@ -11,15 +11,17 @@
           <h2 class="nav-title">{{ site.title }}</h2>
         </a>
         <ul>
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-
+          <li><a href="{{ site.baseurl }}/">첫화면</a></li>
           <li><a href="{{ '/commitment' | prepend: site.baseurl }}">공약</a></li>
           <li><a href="{{ '/opinion' | prepend: site.baseurl }}">기고</a></li>
           <li><a href="{{ '/thought' | prepend: site.baseurl }}">이우일의 생각</a></li>
           <li><a href="{{ '/about' | prepend: site.baseurl }}">이우일은..?</a></li>
         </ul>
-    </div>
-  </nav>
+      </div>
+      <div class="top-banner">
+      <h2 class="top-banner-title">	&ldquo;학문의 오케스트라 SNU. 진리의 빛을 연주합니다.&rdquo;</h2>
+      </div>
+    </nav>
 
     <main>
       {{ content }}
@@ -27,7 +29,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> Wooil Lee.
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> Wooil Lee. Seoul National University.
       </span>
     </footer>
   </body>
