@@ -3,12 +3,8 @@ layout: page
 title: 왁자지껄
 permalink: /public-talk/
 ---
-![왁자지껄 2018 제1화]({{ "/assets/images/wak1.png" }}){:.wak-image}
-* aaa
-* bbb
-* ccc
+![왁자지껄 2018 제2화]({{ "/assets/images/wak2.png" }}){:.wak-image}
+
 
 ___
-
-
-![왁자지껄 2018 제2화]({{ "/assets/images/wak2.png" }}){:.wak-image}
+![왁자지껄 2018 제1화]({{ "/assets/images/wak1.png" }}){:.wak-image}
