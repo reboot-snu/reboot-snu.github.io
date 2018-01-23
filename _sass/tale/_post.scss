@@ -27,6 +27,10 @@
     width: 4rem;
   }
 
+  &-content {
+    font-family: $sans-serif;
+  }
+
   p {
     margin: 0 0 1rem;
     text-align: justify;
