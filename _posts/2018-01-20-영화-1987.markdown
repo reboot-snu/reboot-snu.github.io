@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "영화 1987"
+date:   2018-01-20 18:20:00 +0900
+categories: thought
+comments: true
+---
+
+오늘 모처럼 영화를 봤습니다. 요즘 화제인 1987 인데요. 저도 기억이 생생한 민주화 과정을 실감나게 풀어놓았더군요. 우리가 향유하고 있는 자유로운 사회를 만드는데 서울대 동문들이 얼마나 용기있게 앞장섰는지 보고 무거운 책무를 느꼈습니다.
+
+![영화 1987]({{ "/assets/images/1987.jpg" | absolute_url }})
+#### [‘박종철 고문사’ 밝힌 검사와 의사, 30년 만에 만났다 (한겨레)](http://www.hani.co.kr/arti/society/rights/778687.html#cb)
