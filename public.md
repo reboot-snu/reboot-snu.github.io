@@ -12,7 +12,6 @@ permalink: /public-talk/
 ### <span style="color:#4a9ae1;">1회. 1월 23일 화요일 11시 30분 ~ 1시 30분</span>
 * 학사제도 유연화
 
-
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
 </style>
