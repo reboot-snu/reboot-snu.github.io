@@ -12,6 +12,16 @@ permalink: /public-talk/
 ### <span style="color:#4a9ae1;">1회. 1월 23일 화요일 11시 30분 ~ 1시 30분</span>
 * 학사제도 유연화
 
+
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+<div class="responsive-wrap">
+<!-- this is the embed code provided by Google -->
+  <iframe src="https://docs.google.com/presentation/d/1TNaqHkeoWVAK8482_GvchqxHtuOsA6B0lC_RjRaRuDI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+</div>
+
 ---
 
 # 2017년도
