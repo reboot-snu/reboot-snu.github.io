@@ -5,6 +5,9 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.title == "왁자지껄" %}
+      <h3 style="text-align: center;">왁자지껄은 구성원 누구나 참여할수 있는 대학정책 소통 공간입니다</h3>
+    {% endif %}
     <div class="post-line"></div>
   </header>
 
