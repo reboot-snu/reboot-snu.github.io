@@ -10,7 +10,7 @@ permalink: /public-talk/
 * 멀티캠퍼스 전략
 
 <style>
-.responsive-wrap iframe{ max-width: 100%;}
+.responsive-wrap iframe{ max-width: 100%; }
 </style>
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
@@ -22,7 +22,7 @@ permalink: /public-talk/
 * 학사제도 유연화
 
 <style>
-.responsive-wrap iframe{ max-width: 100%;}
+.responsive-wrap iframe{ max-width: 100%; }
 </style>
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
