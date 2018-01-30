@@ -14,7 +14,7 @@ permalink: /public-talk/
 </style>
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
-  <iframe src="https://docs.google.com/presentation/d/1Bn3lcJDN_SfIm83KqQv_FAf4UZj5Ycf_eQBZd9CoMnA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="629" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe src="https://docs.google.com/presentation/d/1Bn3lcJDN_SfIm83KqQv_FAf4UZj5Ycf_eQBZd9CoMnA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="479" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
 
