@@ -7,7 +7,7 @@ permalink: /public-talk/
 # 2018년도
 
 ### <span style="color:#4a9ae1;">2회. 1월 30일 화요일 11시 30분 ~ 1시 30분</span>
-* 멀티캠퍼스 전략
+* 멀티캠퍼스 전략 (관악캠퍼스)
 
 <div class="wrapper">
     <div class="h_iframe">
