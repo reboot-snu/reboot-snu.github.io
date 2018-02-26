@@ -17,7 +17,7 @@ layout: default
         {% elsif post.categories[0] == "video" %}
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
         {% endif %}
-        {{ post.title }}
+        {{ post.title | replace: "<br>", " " }}
         </h1>
         <div class="catalogue-line"></div>
 
@@ -31,7 +31,7 @@ layout: default
 </div>
 
 <div class="wak">
-  <a href="public-talk"><img src="/assets/images/wak4.png" class="wak-banner" /></a>
+  <a href="public-talk"><img src="/assets/images/wak6.png" class="wak-banner" /></a>
 </div>
 
 <div class="pagination">

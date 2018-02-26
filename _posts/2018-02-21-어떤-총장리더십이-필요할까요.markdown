@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "위기의 대학,<br>어떤 총장리더십이 필요할까요?"
-date:   2018-02-21 9:00:00 +0900
+date:   2018-02-21 10:00:00 +0900
 categories: commitment
 comments: true
 ---
