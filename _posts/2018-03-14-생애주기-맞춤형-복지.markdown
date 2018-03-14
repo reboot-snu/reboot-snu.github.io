@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "급여와 복지... <br>'생애주기 맞춤형 복지체계'를 생각해 봅니다."
+title:  "급여와 복지... '생애주기 맞춤형 복지체계'를 생각해 봅니다."
 date:   2018-03-14 10:00:00 +0900
 categories: commitment
 comments: true
