@@ -2,7 +2,7 @@
 layout: post
 title:  "4차 산업혁명 시대, 인재양성과 수능"
 date:   2018-01-07 14:21:00 +0900
-categories: opinion
+categories: activity
 comments: true
 ---
 #### [한국일보 2018년 1월 7일](http://www.hankookilbo.com/v/88181f622b6a476fae5cad77a312ce32)

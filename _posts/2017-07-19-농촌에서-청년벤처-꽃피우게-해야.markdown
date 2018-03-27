@@ -2,7 +2,7 @@
 layout: post
 title:  "농촌에서 청년벤처 꽃피우게 해야"
 date:   2017-07-19 18:35:00 +0900
-categories: opinion
+categories: activity
 comments: true
 ---
 #### [한국경제 2017년 9월 18일](http://news.hankyung.com/article/2017071945381)

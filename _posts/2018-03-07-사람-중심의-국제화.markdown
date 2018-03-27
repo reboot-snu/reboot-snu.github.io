@@ -2,7 +2,7 @@
 layout: post
 title:  "사람 중심의 국제화"
 date:   2018-03-07 10:00:00 +0900
-categories: commitment
+categories: communication
 comments: true
 ---
 

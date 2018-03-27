@@ -2,7 +2,7 @@
 layout: post
 title:  "여성과기인 정책 업그레이드 토론회"
 date:   2017-11-28 20:24:00 +0900
-categories: thought
+categories: activity
 comments: true
 ---
 

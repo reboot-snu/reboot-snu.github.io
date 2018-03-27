@@ -2,7 +2,7 @@
 layout: post
 title:  "과학기술혁신본부에 거는 기대"
 date:   2017-09-18 21:22:25 +0900
-categories: opinion
+categories: activity
 comments: true
 ---
 #### [세계일보 2017년 9월 18일](http://www.segye.com/newsView/20170918004618)

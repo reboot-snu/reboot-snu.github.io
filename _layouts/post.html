@@ -2,6 +2,52 @@
 layout: default
 comments: true
 ---
+{% if page.categories[0] == "commitment" %}
+<br />
+<div class="commit-banner">
+  <div class="button"><a href="/2018-03-27/서울대학교-발전계획서">발전계획서</a>
+    <div></div>
+    <i class="fa fa-power-off"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/01.교육">교육</a>
+    <div></div>
+    <i class="fa fa-graduation-cap"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/02.연구">연구</a>
+    <div></div>
+    <i class="fa fa-bar-chart"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/03.글로벌">글로벌</a>
+    <div></div>
+    <i class="fa fa-globe"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/04.거버넌스">거버넌스</a>
+    <div></div>
+    <i class="fa fa-sitemap"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/05.멀티캠퍼스">멀티캠퍼스</a>
+    <div></div>
+    <i class="fa fa-university"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/06.재정">재정</a>
+    <div></div>
+    <i class="fa fa-won"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/07.복지">복지</a>
+    <div></div>
+    <i class="fa fa-paper-plane-o"></i>
+  </div>
+  <div class="button"><a href="/2018-03-27/소견서">소견서</a>
+    <div></div>
+    <i class="fa fa-commenting-o"></i>
+  </div>
+  <div class="button orange"><a href="/2018-03-27/소견서">분류</a>
+    <div></div>
+    <i class="fa fa-list"></i>
+  </div>
+</div>
+<hr />
+{% endif %}
 
 <div class="post">
   <div class="post-info">
@@ -23,6 +69,10 @@ comments: true
       공약
       {% elsif page.categories[0] == "video" %}
       비디오
+      {% elsif page.categories[0] == "communication" %}
+      소통
+      {% elsif page.categories[0] == "activity" %}
+      활동
       {% endif %} &middot;
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}

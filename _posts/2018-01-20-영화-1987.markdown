@@ -2,7 +2,7 @@
 layout: post
 title:  "영화 1987"
 date:   2018-01-20 18:20:00 +0900
-categories: thought
+categories: communication
 comments: true
 ---
 

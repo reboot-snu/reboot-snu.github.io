@@ -2,7 +2,7 @@
 layout: post
 title:  "4차산업혁명은 교육혁명이다"
 date:   2017-10-25 14:57:00 +0900
-categories: opinion
+categories: activity
 comments: true
 ---
 #### [한국일보 2017년 10월 25일](http://www.hankookilbo.com/v/b0443ce48eba4cfd80896efe1e4ff9ea)

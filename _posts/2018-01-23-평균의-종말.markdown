@@ -2,7 +2,7 @@
 layout: post
 title:  "평균의 종말"
 date:   2018-01-23 18:02:13 +0900
-categories: thought
+categories: communication
 comments: true
 ---
 ![The End of Average]({{ "/assets/images/the-end-of-average.jpg " | absolute_url }})
