@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "연구: 성과 위주에서 연구자 중심으로 연구 지원 시스템을 바꾸겠습니다."
+title:  "성과 위주에서 연구자 중심으로 연구 지원 시스템을 바꾸겠습니다."
 date:   2018-03-22 10:02:00 +0900
 categories: commitment
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "복지: 생애주기맞춤형으로 편리한 복지, 따뜻한 복지, 힘이 되는 복지를 실현하겠습니다."
+title:  "생애주기맞춤형으로 편리한 복지, 따뜻한 복지, 힘이 되는 복지를 실현하겠습니다."
 date:   2018-03-22 10:07:00 +0900
 categories: commitment
 comments: true

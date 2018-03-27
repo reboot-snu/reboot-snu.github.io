@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "재정: 서울대학교 재정, 119 프로젝트로 해결하겠습니다."
+title:  "서울대학교 재정, 119 프로젝트로 해결하겠습니다."
 date:   2018-03-22 10:06:00 +0900
 categories: commitment
 comments: true
