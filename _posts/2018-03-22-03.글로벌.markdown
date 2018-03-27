@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "글로벌: 세계를 향해 열려 있는 사람 중심의 국제화를 추진하겠습니다."
-date:   2018-03-27 10:03:00 +0900
+date:   2018-03-22 10:03:00 +0900
 categories: commitment
 comments: true
 ---
