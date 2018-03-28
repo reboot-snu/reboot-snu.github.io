@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "다양성을 바탕으로 수월성과 창의성이 살아 숨 쉬는 교육환경을 만들겠습니다."
+title: "다양성을 바탕으로 수월성과 창의성이<br>살아 숨 쉬는 교육환경을 만들겠습니다."
 date: 2018-03-22 10:01:00 +0900
 categories: commitment
 comments: true
