@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "눈높이"
+title:  "내게 맞는 공약"
 date: 2018-03-22 10:09:00 +0900
 categories: commitment
 comments: true
