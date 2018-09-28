@@ -1,112 +1,39 @@
 ---
 layout: default
-comments: true
 ---
-{% if page.categories[0] == "commitment" %}
-<br />
-<div class="commit-banner">
-  <div class="button"><a href="/2018-03-22/서울대학교-발전계획서">발전계획서</a>
-    <div></div>
-    <i class="fa fa-power-off"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/01.교육">교육</a>
-    <div></div>
-    <i class="fa fa-graduation-cap"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/02.연구">연구</a>
-    <div></div>
-    <i class="fa fa-bar-chart"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/03.글로벌">글로벌</a>
-    <div></div>
-    <i class="fa fa-globe"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/04.거버넌스">거버넌스</a>
-    <div></div>
-    <i class="fa fa-sitemap"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/05.멀티캠퍼스">멀티캠퍼스</a>
-    <div></div>
-    <i class="fa fa-university"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/06.재정">재정</a>
-    <div></div>
-    <i class="fa fa-won"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/07.복지">복지</a>
-    <div></div>
-    <i class="fa fa-paper-plane-o"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/소견서">소견서</a>
-    <div></div>
-    <i class="fa fa-commenting-o"></i>
-  </div>
-  <div class="button orange"><a href="/2018-03-22/내게맞는공약">내게맞는공약</a>
-    <div></div>
-    <i class="fa fa-list"></i>
-  </div>
-</div>
-<hr />
-{% endif %}
 
-<div class="post">
-  <div class="post-info">
-    <!-- <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %} -->
+<header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}}.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
 
-    {% if page.date %}
-      <!-- <br> -->
-      <!-- <span>on&nbsp;</span> -->
-      {% if page.categories[0] == "opinion" %}
-      기고
-      {% elsif page.categories[0] == "thought" %}
-      이우일의 생각
-      {% elsif page.categories[0] == "commitment" %}
-      공약
-      {% elsif page.categories[0] == "video" %}
-      비디오
-      {% elsif page.categories[0] == "communication" %}
-      소통
-      {% elsif page.categories[0] == "activity" %}
-      활동
-      {% endif %} &middot;
-      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% include nav.html %}
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize}}</a> in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize }}</a> <i class="link-spacer"></i> {{ page.date | date: "%b %-d, %Y" }}
+            </p>
+
+            <h1>{{ page.title }}</h1>
+            <br />
+            <br />
+            {{ content }}
+            {% include disqus.html %}
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    {% include footer-single.html %}
+
+    {% if page.show_related_posts == true %}
+        {% include footer-related-posts.html %}
     {% endif %}
-  </div>
-
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-line"></div>
-
-  {% if page.carousel %}
-  <div class="flexslider">
-    <ul class="slides">
-      {% for slides in page.carousel %}
-      <li>
-        <img src="{{ slides.image }}">
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-  {{ content }}
-  <br />
-  <br />
-  {% include disqus.html %}
-
-</div>
-
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;&nbsp;&nbsp;{{ page.next.title }}</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">{{ page.previous.title }}&nbsp;&nbsp;&#8594;</a>
-  {% endif %}
-
-  <a href="#" class="top">Top</a>
-</div>
+</footer>

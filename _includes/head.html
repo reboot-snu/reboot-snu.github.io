@@ -1,35 +1,28 @@
 <head>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Reboot SNU 2018. 서울대, 새로운 시작" />
-  <meta name="description" content="서울대학교 이우일" />
-  <meta name="keywords" content="이우일, Wooil Lee, 서울대학교, SNU, Seoul National University, 총장후보, 총장선거, 총장, 학문의 오케스트라" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>
-    {% if page.title == "첫화면" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+    <title>{{ site.title }} | {% if page.title %}{{ page.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- JS -->
-  {% if page.carousel %}
-  <!-- Google CDN Hosted jQuery  -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <!-- Flexslider Library  -->
-  <script src="/assets/js/jquery.flexslider-min.js"></script>
-  <!-- Initialisation Code  -->
-  <script src="/assets/js/app.js"></script>
-  {% endif %}
+    <link rel="stylesheet" href="/css/flexslider.css">
+
+    <meta name="description" content="서울대학교 이우일" />
+    <meta name="keywords" content="이우일, Wooil Lee, 서울대학교, SNU, Seoul National University, 총장후보, 총장선거, 총장, 학문의 오케스트라, 서울대총장, 서울대총장선거" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/img/favicon-32x32.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/img/favicon-16x16.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/apple-touch-icon.png" | relative_url }}">
+
+    <!--[if lt IE 9]>
+        <script src="{{ "/js/vendor/html5shiv.min.js" | prepend: site.baseurl }}"></script>
+    <![endif]-->
+
 </head>

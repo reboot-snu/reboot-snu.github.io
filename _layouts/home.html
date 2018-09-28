@@ -1,97 +1,95 @@
 ---
-layout: default
+layout: with-sidebar
 ---
+<section class="row">
+    <div class="col-sm-12">
+        <h2 class="favorites">Recent posts</h2>
+    </div>
+
+    {% for post in site.posts %}
+    {% if forloop.index <= 4 %} <article class="post-favorite col-xs-12 col-sm-6 ">
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+        {{ post.excerpt | truncatewords: 18 }}
+        </article>
+        <!-- wrap first two posts into their own row and start a new row for post 3 & 4 -->
+        {% if forloop.index == 2 %}
+</section><!-- end recent posts -->
+
+<section class="row">
+    <!-- start new row -->
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+</section><!-- end fav posts -->
+
+<a class="btn btn-primary" href="/posts"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;더보기...</a>
+
 <br />
-<div class="commit-banner">
-  <!-- <div class="comb">
-    <a href="/2018-03-27/서울대학교-발전계획서"><img src="/assets/images/commitment.png" class="comb-banner" /></a>
-  </div> -->
-  <div class="button"><a href="/2018-03-22/서울대학교-발전계획서">발전계획서</a>
-    <div></div>
-    <i class="fa fa-power-off"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/01.교육">교육</a>
-    <div></div>
-    <i class="fa fa-graduation-cap"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/02.연구">연구</a>
-    <div></div>
-    <i class="fa fa-bar-chart"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/03.글로벌">글로벌</a>
-    <div></div>
-    <i class="fa fa-globe"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/04.거버넌스">거버넌스</a>
-    <div></div>
-    <i class="fa fa-sitemap"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/05.멀티캠퍼스">멀티캠퍼스</a>
-    <div></div>
-    <i class="fa fa-university"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/06.재정">재정</a>
-    <div></div>
-    <i class="fa fa-won"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/07.복지">복지</a>
-    <div></div>
-    <i class="fa fa-paper-plane-o"></i>
-  </div>
-  <div class="button"><a href="/2018-03-22/소견서">소견서</a>
-    <div></div>
-    <i class="fa fa-commenting-o"></i>
-  </div>
-  <div class="button orange"><a href="/2018-03-22/내게맞는공약">내게맞는공약</a>
-    <div></div>
-    <i class="fa fa-list"></i>
-  </div>
-</div>
-<hr />
+<br />
 
+<section class="row favorite-categories animated fadeIn">
+    <div class="col-sm-12">
+        <h2 class="favorites">발전계획서<h2>
+    </div>
 
-<div class="catalogue">
-  {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1>
-          {% if post.categories[0] == "thought" %}
-          <i class="fa fa-commenting-o" aria-hidden="true"></i>
-          {% elsif post.categories[0] == "opinion" %}
-          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-          {% elsif post.categories[0] == "commitment" %}
-          <i class="fa fa-power-off" aria-hidden="true"></i>
-          {% elsif post.categories[0] == "video" %}
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
-          {% elsif post.categories[0] == "communication" %}
-          <i class="fa fa-commenting-o" aria-hidden="true"></i>
-          {% elsif post.categories[0] == "activity" %}
-          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-          {% endif %}
-        {{ post.title | replace: "<br>", " " }}
-        </h1>
-        <div class="catalogue-line"></div>
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>발전계획서</h2>
+        <a href='/devplan'><img src='/img/snugate-bg.jpg' alt="snu-gate"></a>
+    </div>
 
-        <p>
-          {{ post.content | truncatewords: 30 | strip_html }}
-        </p>
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>교육</h2>
+        <a href='/education'><img src='/img/education-bg.jpg' alt="Education"></a>
+    </div>
 
-      </div>
-    </a>
-  {% endfor %}
-</div>
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>연구</h2>
+        <a href='/research'><img src='/img/research-bg.jpg' alt="research"></a>
+    </div>
 
-<div class="wak">
-  <a href="public-talk"><img src="/assets/images/wak6.png" class="wak-banner" /></a>
-</div>
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>글로벌</h2>
+        <a href='/global'><img src='/img/global-bg.jpg' alt="global"></a>
+    </div>
+    
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>거버넌스</h2>
+        <a href='/governance'><img src='/img/governance-bg.jpg' alt="governance"></a>
+    </div>
+    
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>멀티캠퍼스</h2>
+        <a href='/multi-campus'><img src='/img/campus-bg.jpg' alt="campus"></a>
+    </div>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-  <span>{{ paginator.page }}</span>
-</div>
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>복지</h2>
+        <a href='/life'><img src='/img/life-bg.jpg' alt="life"></a>
+    </div>
+    
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>재정</h2>
+        <a href='/finance'><img src='/img/finance-bg.jpg' alt="finance"></a>
+    </div>
+    
+    <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>소견서</h2>
+        <a href='/statement'><img src='/img/wooil-sm-bg.jpg' alt="wooil"></a>
+    </div>
+
+    <!-- {% for category in site.categories %}
+    {% if forloop.index <= 3 %} <div class="category-preview col-xs-6 col-sm-4 ">
+        <h2>{{ category | first | capitalize }}</h2>
+        <a href='{{ "/category/" | append: category.first | prepend: site.baseurl }}'><img src='{{ "/img/" | append: category.first | prepend: site.baseurl }}-thumbnail.jpg'
+                alt="category-image"></a>
+        </div>
+        {% endif %}
+        {% endfor %} -->
+
+</section>
+<br />
+<a class="btn btn-primary" href="/doc/snu-devplan-kr.pdf"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;발전계획서 다운로드</a>
+<br />
+<br />

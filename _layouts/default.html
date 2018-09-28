@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html class="no-js">
 
   {% include head.html %}
   {% include google_analytics.html %}
 
-  <body>
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="{{ site.baseurl }}/">
-          <h2 class="nav-title"><i class="fa fa-power-off" aria-hidden="true"></i> {{ site.title }}</h2>
-        </a>
-        <ul>
-          <!-- <li><a href="{{ site.baseurl }}/">첫화면</a></li> -->
-          <li><a href="{{ '/commitment' | prepend: site.baseurl }}">공약</a></li>
-          <li><a href="{{ '/communication' | prepend: site.baseurl }}">소통</a></li>
-          <li><a href="{{ '/activity' | prepend: site.baseurl }}">활동</a></li>
-          <li><a href="{{ '/about' | prepend: site.baseurl }}">이우일은</a></li>
-          <!-- <li>|</li> -->
-          <li><a href="{{ '/public-talk' | prepend: site.baseurl }}">왁자지껄</a></li>
-          <li><a href="{{ '/talk' | prepend: site.baseurl }}">후보와의 대화</a></li>
-        </ul>
-      </div>
-      <div class="top-banner">
-      <h2 class="top-banner-title">건강한 지식생태계</h2><h4 class="sub-title">총장예비후보 이 우 일</h4><br />
-      </div>
-    </nav>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+    {% include nav-no-js.html %}
+    {{ content }}
 
-    <main>
-      {{ content }}
-    </main>
+    <script src='{{ "/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js" | prepend: site.baseurl }}'></script>
+    <script src="{{'/js/vendor/jquery-1.11.2.min.js' | prepend: site.baseurl }}"></script>
+    <script src='{{ "/js/vendor/jquery.jpanelmenu.min.js" | prepend: site.baseurl }}'></script>
+    <script type='application/javascript' src='{{ "/js/vendor/fastclick.min.js" | prepend: site.baseurl }}'></script>
+    {% if enable_retina %}
+    <script type='application/javascript' src='{{ "/js/vendor/retina.min.js" | prepend: site.baseurl }}'></script>
+    {% endif %}
+    <script src=' {{ "/js/main.js" | prepend: site.baseurl }}'></script>
 
-    <footer>
-      <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> Wooil Lee. Seoul National University.
-      </span>
-    </footer>
+    <!-- Google CDN Hosted jQuery  -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
+    <!-- Flexslider Library  -->
+    <script src="/js/vendor/jquery.flexslider-min.js"></script>
+    <!-- Initialisation Code  -->
+    <script src="/js/vendor/app.js"></script>
+
   </body>
+
 </html>

@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<header class="devplan-hero-image" style='background-image: url({{"/img/" | append: page.feature_image | prepend: site.baseurl }}.jpg);'>
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    {% include nav.html %}
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 single-content-sidebar">
+
+            <h1>{{ page.title }}</h1>
+            <br />
+            <br />
+            <br />
+            <br />
+            {{ content }}
+            {% include disqus.html %}
+
+        </div><!-- main-content/col -->
+
+        <div class="col-xs-12 col-md-3 col-md-offset-1 single-content-sidebar-area">
+
+            <h2 class="favorites">서울대학교 발전계획서</h2>
+
+                <div class="similar-post">
+                    <a href="/devplan"><h3>발전계획서</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/education"><h3>1. 교육</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/research"><h3>2. 연구</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/global"><h3>3. 국제화</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/governance"><h3>4. 거버넌스</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/multi-campus"><h3>5. 멀티캠퍼스</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/life"><h3>6. 복지</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/finance"><h3>7. 재정</h3></a>
+                </div>
+                <div class="similar-post">
+                    <a href="/statement"><h3>소견서</h3></a>
+                </div>
+                <hr />
+        </div>
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+{% include footer-page.html %}
