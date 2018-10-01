@@ -13,6 +13,7 @@ nav_list:
   Posts : ['이우일의 생각', '/posts', 'fa-newspaper-o']
   About : ['이우일은..', '/about', 'fa-user']
   Talk : ['이우일과의 대화', '/talk', 'fa-comments-o']
+  Old-Talk : ['지난 대화의 기록', '/지난-대화의-기록', 'fa-comment-o']
 single_footer: '<p>Reboot SNU: 서울대의 새로운 비상. &copy; 2018</p>'
 footer_links:
   Home : ['홈으로', '/']
