@@ -17,7 +17,7 @@ nav_list:
 single_footer: '<p>Reboot SNU: 서울대의 새로운 비상. &copy; 2018</p>'
 footer_links:
   Home : ['홈으로', '/']
-  Devplan: ['발전계획서', 'devplan']
+  Devplan: ['발전계획서', '/devplan']
   Posts : ['이우일의 생각', '/posts']
   About : ['이우일은', '/about']
   Talk : ['이우일과의 대화', '/talk']
